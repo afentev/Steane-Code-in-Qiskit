@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage[braket,qm]{qcircuit}
+\begin{document}
+    \[
+        \Qcircuit @C=1em @R=1.2em {
+            \lstick{\ket{0}}    & \qw & \gate{H} & \ctrl{1} & \gate{H} & \meter \\
+            \lstick{\ket{\psi}} & {/^{{}^7}}\qw & \qw & \gate{\bar{M}} & \qw & \qw
+        }
+    \]
+\end{document}
